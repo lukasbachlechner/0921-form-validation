@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hotel - Formular</title>
+    <script src="form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <h1>Reservieren</h1>
+        <form action="#">
+          <div class="formularInhalt vorname">
+            <label for="Vorname">Vorname: </label>
+            <input class="textInput" type="text" id="vorname" name="Vorname" />
+            <small class="succesmsg"> Gültig </small>
+            <small class="errormsg">Ungültig </small>
+          </div>
+          <div class="formularInhalt nachname">
+            <label for="Nachname">Nachname: </label>
+            <input class="textInput" type="" id="nachname" name="Nachname" />
+            <small class="succesmsg"> Gültig </small>
+            <small class="errormsg">Ungültig </small>
+          </div>
+          <div class="formularInhalt geschlecht">
+            <label class="textInput" for="geschlecht">Geschlecht: </label>
+            <div class="radioButton">
+              <input
+                type="radio"
+                id="männlich"
+                name="geschlecht"
+                value="weiblich"
+              />
+              <label for="männlich"> männlich</label>
+            </div>
+            <div class="radioButton">
+              <input
+                type="radio"
+                id="weiblich"
+                name="geschlecht"
+                value="weiblich"
+              />
+              <label for="weiblich"> weiblich</label>
+            </div>
+            <div class="radioButton">
+              <input
+                type="radio"
+                id="divers"
+                name="geschlecht"
+                value="divers"
+              />
+              <label for="divers"> divers</label>
+            </div>
+            <small class="succesmsg"> Gültig </small>
+            <small class="errormsg">Ungültig </small>
+          </div>
+
+          <div class="formularInhalt email">
+            <label for="Email">E-Mail: </label>
+            <input class="textInput" type="" id="email" name="Email" />
+            <small class="succesmsg"> Gültig </small>
+            <small class="errormsg">Ungültig </small>
+          </div>
+          <div class="formularInhalt telefonnummer">
+            <label for="Telefonnummer">Telefonnummer: </label>
+            <input
+              class="textInput"
+              type=""
+              id="telefonnummer"
+              name="Telefonnummer"
+            />
+            <small class="succesmsg"> Gültig </small>
+            <small class="errormsg">Ungültig </small>
+          </div>
+
+          <div class="formularInhalt" id="auswahlListe">
+            <label
+              >Zimmer:
+              <select name="top3" size="1">
+                <option>auswählen</option>
+                <option>Einzelzimmer</option>
+                <option>Doppelzimmer</option>
+                <option>Doppelzimmer Deluxe</option>
+              </select>
+            </label>
+            <small class="succesmsg"> Gültig </small>
+            <small class="errormsg">Ungültig </small>
+          </div>
+
+          <div class="formularInhalt">
+            <legend class="checkliteUeberschrift">Bitte ankreuzen:</legend>
+            <div class="checkliste">
+              <input
+                type="checkbox"
+                name="newsletter"
+                value="newsletter"
+                id="newsletter"
+                checked
+              />
+              <label for="checkNewsletter">Newsletter abonnieren</label>
+            </div>
+            <div class="checkliste">
+              <input
+                type="checkbox"
+                name="newsletter"
+                value="newsletter"
+                id="checkAGB"
+              />
+              <label for="checkAGB"
+                >Hiermit bestätige ich, dass ich die AGB's gelesen habe und
+                akzeptiere</label
+              >
+            </div>
+            <small class="succesmsg"> Gültig </small>
+            <small class="errormsg">Ungültig </small>
+          </div>
+
+          <div class="formularInhalt">
+            <button class="submitButton">jetzt Reservieren</button>
+            <small class="succesmsg">
+              Formular wurde erfolgreich abgesendet
+            </small>
+            <small class="errormsg">Ungültig </small>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
